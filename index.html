@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>David Diliberto</title>
+  <meta name="description" content="David Diliberto — Founder of Situation Normal, a design and commerce studio.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daviddiliberto.com">
+  <meta property="og:title" content="David Diliberto">
+  <meta property="og:description" content="Founder of Situation Normal, a design and commerce studio.">
+  <meta property="og:image" content="https://daviddiliberto.com/og.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Diliberto">
+  <meta name="twitter:description" content="Founder of Situation Normal, a design and commerce studio.">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --ink: #0a0a0a;
+      --muted: #888;
+      --bg: #f8f7f4;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(2rem, 6vw, 4rem);
+    }
+
+    main {
+      max-width: 560px;
+    }
+
+    .name {
+      font-family: var(--serif);
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 0.35em;
+    }
+
+    .role {
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.01em;
+      margin-bottom: 2rem;
+    }
+
+    .role a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #ccc;
+      transition: color 0.15s, text-decoration-color 0.15s;
+    }
+
+    .role a:hover {
+      color: var(--ink);
+      text-decoration-color: var(--ink);
+    }
+
+    .bio {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #333;
+      max-width: 42ch;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      padding-top: 3rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      list-style: none;
+    }
+
+    .links a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: color 0.15s;
+      position: relative;
+    }
+
+    .links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--ink);
+      transition: width 0.2s ease;
+    }
+
+    .links a:hover {
+      color: var(--ink);
+    }
+
+    .links a:hover::after {
+      width: 100%;
+    }
+
+    .divider {
+      width: 1px;
+      height: 1rem;
+      background: #ddd;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f0ede8;
+        --muted: #777;
+        --bg: #111110;
+      }
+
+      .bio {
+        color: #bbb;
+      }
+
+      .divider {
+        background: #333;
+      }
+
+      .role a {
+        text-decoration-color: #444;
+      }
+
+      .links a::after {
+        background: var(--ink);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1 class="name">David Diliberto</h1>
+    <p class="role">Founder, <a href="https://situationnormal.co" target="_blank" rel="noopener">Situation Normal</a></p>
+    <p class="bio">Design and commerce, built to last. I work with brands on the things that actually move the needle — identity, experience, and the systems that hold it all together.</p>
+  </main>
+
+  <footer>
+    <ul class="links">
+      <li><a href="https://situationnormal.co" target="_blank" rel="noopener">Studio</a></li>
+      <li><a href="https://linkedin.com/in/daviddiliberto" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://instagram.com/sitnormal" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="mailto:david@situationnormal.co">Email</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
