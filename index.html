@@ -29,15 +29,14 @@
     }
 
     :root {
-      --ink: #0a0a0a;
-      --muted: #888;
-      --bg: #f8f7f4;
-      --serif: Georgia, 'Times New Roman', serif;
+      --ink: #000;
+      --muted: #000;
+      --bg: #fff;
       --sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     }
 
     html {
-      font-size: 16px;
+      font-size: 13px;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -45,6 +44,8 @@
       background: var(--bg);
       color: var(--ink);
       font-family: var(--sans);
+      font-size: 13px;
+      text-transform: uppercase;
       min-height: 100svh;
       display: flex;
       flex-direction: column;
@@ -57,17 +58,15 @@
     }
 
     .name {
-      font-family: var(--serif);
-      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      font-size: 13px;
       font-weight: 400;
-      letter-spacing: -0.02em;
-      line-height: 1.1;
+      letter-spacing: 0.01em;
+      line-height: 1.4;
       margin-bottom: 0.35em;
     }
 
     .role {
-      font-size: 0.9rem;
-      color: var(--muted);
+      font-size: 13px;
       letter-spacing: 0.01em;
       margin-bottom: 2rem;
     }
@@ -77,19 +76,17 @@
       text-decoration: underline;
       text-underline-offset: 3px;
       text-decoration-color: #ccc;
-      transition: color 0.15s, text-decoration-color 0.15s;
+      transition: text-decoration-color 0.15s;
     }
 
     .role a:hover {
-      color: var(--ink);
-      text-decoration-color: var(--ink);
+      text-decoration-color: #000;
     }
 
     .bio {
-      font-size: 1rem;
+      font-size: 13px;
       line-height: 1.65;
-      color: #333;
-      max-width: 42ch;
+      max-width: 52ch;
     }
 
     footer {
@@ -108,11 +105,11 @@
     }
 
     .links a {
-      font-size: 0.85rem;
-      color: var(--muted);
+      font-size: 13px;
+      color: var(--ink);
       text-decoration: none;
       letter-spacing: 0.01em;
-      transition: color 0.15s;
+      transition: opacity 0.15s;
       position: relative;
     }
 
@@ -123,46 +120,12 @@
       left: 0;
       width: 0;
       height: 1px;
-      background: var(--ink);
+      background: #000;
       transition: width 0.2s ease;
-    }
-
-    .links a:hover {
-      color: var(--ink);
     }
 
     .links a:hover::after {
       width: 100%;
-    }
-
-    .divider {
-      width: 1px;
-      height: 1rem;
-      background: #ddd;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --ink: #f0ede8;
-        --muted: #777;
-        --bg: #111110;
-      }
-
-      .bio {
-        color: #bbb;
-      }
-
-      .divider {
-        background: #333;
-      }
-
-      .role a {
-        text-decoration-color: #444;
-      }
-
-      .links a::after {
-        background: var(--ink);
-      }
     }
   </style>
 </head>
